@@ -38,10 +38,7 @@ const missingNumberBitwise = function (nums) {
 
   for (let i = 0; i < range; i++) {
     ans ^= nums[i] ^ i;
-    console.log(nums[i] ^ i, ans);
   }
 
   return ans ^ range;
 };
-
-missingNumberBitwise([1, 2, 0]);
