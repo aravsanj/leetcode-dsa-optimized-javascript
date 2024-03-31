@@ -37,7 +37,7 @@ Here we get O(n) time and space complexity
 const deleteDuplicatesRecursion = function (head) {
   // We create helper function that calls recursively
   function helper(curr) {
-    // Recursion stops of curr or next node is null and return the curr node
+    // Recursion stops if curr or next node is null and return the curr node
     if (!curr || !curr.next) return curr;
 
     // We are storing the return value from helper method as the next node
