@@ -17,7 +17,7 @@ The left pointer starts at beginning of the string while the right pointer start
 We ignore all characters that are not alpha-numeric and simply update their pointers instead.
 
 Time complexity - O(n)
-Space complexity - O(n)
+Space complexity - O(1)
 */
 
 let isPalindrome = function (s) {
