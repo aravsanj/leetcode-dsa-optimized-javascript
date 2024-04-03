@@ -54,3 +54,20 @@ let reverseListRecursion = function (head) {
   head = helper(head);
   return head;
 };
+
+/*
+Here is a even more simplified version. Here we pass the next and previous pointers into the helper function.
+Then we change the next reference to previous during each call.
+*/
+
+let reverseListRecursionSimplified = function (head) {
+  function helper(head, prev = null) {
+    if (!head) return prev;
+
+    let next = head.next;
+    head.next = prev;
+    return helper(next, head);
+  }
+
+  return helper(head);
+};
