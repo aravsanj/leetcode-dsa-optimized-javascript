@@ -25,12 +25,12 @@ let oddEvenList = function (head) {
   // If there is no head, return null.
   if (!head) return null;
 
-  // Assigning odd and even pointers as well as keeping rack of even list's head.
+  // Assigning odd and even pointers as well as keeping track of even list's head.
   let odd = head;
   let even = head.next;
   let evenHead = head.next;
 
-  // Since even pointer is leading the traversal till it hits the end, we only need to check the even pointer her.
+  // Since even pointer is leading the traversal till it hits the end, we only need to check the even pointer here.
   while (even && even.next) {
     // Since odd will come after even
     odd.next = even.next;
