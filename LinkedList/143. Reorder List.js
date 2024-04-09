@@ -13,7 +13,7 @@ You may not modify the values in the list's nodes. Only nodes themselves may be 
 /*
 The way to solve this problem is to find the middle using two pointer technique.
 
-Once we find the middle, we can second half of the list.
+Once we find the middle, we can reverse second half of the list.
 
 Once it is reversed, we just have to merge these too lists to get the reordered list.
 */
